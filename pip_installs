@@ -1,0 +1,2 @@
+pip install fastapi uvicorn google-api-python-client pandas python-dotenv vaderSentiment
+uvicorn server:app --reload
