@@ -74,7 +74,7 @@
 
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5"></script>
   </head>
   <body class="m-5">
     <div class="relative flex justify-center bg-white">
@@ -221,22 +221,18 @@
             </div>
         </div>
     
-      <!--TIME SERIES-->
+      <!--PIE CHART-->
 
       <div class="mt-8 w-full">
-        <h3 class="text-xl mb-4">Comments time series</h3>
-        <div id="time-series">
-          <canvas id="time-series-chart"></canvas>
-        </div>
+        <h3 class="text-xl mb-4">Comments sentiment pie chart</h3>
+        <div id="pie-chart" style="height: 400px;"></div>
       </div>
 
       <!--SENTIMENT ANALYSIS-->
 
       <div class="mt-8 w-full">
         <h3 class="text-xl mb-4">Sentiment Analysis</h3>
-        <div id="sentiment-analysis">
-          <canvas id="sentiment-analysis-chart"></canvas>
-        </div>
+        <div id="sentiment-analysis" style="height: 400px;"></div>
       </div>
 
       <!--MOST COMMENTED VIDEOS-->
@@ -260,6 +256,6 @@
 
   
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="script\js\index.js"></script>
   </body>
 </html>
