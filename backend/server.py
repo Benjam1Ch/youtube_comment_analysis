@@ -3,7 +3,7 @@ import json
 from googleapiclient.discovery import build
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 app = FastAPI()
@@ -17,14 +17,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-#load_dotenv()
+load_dotenv()
 
 # Initializing vader
 analyzer = SentimentIntensityAnalyzer()
 
-#API_KEY = os.getenv('API_KEY')
-API_KEY = "AIzaSyAqktuR2rOSVetvOEs1zPd5281Vo8kcAbs"
-
+API_KEY = os.getenv('API_KEY')
 
 # Function to fetch comments
 def get_video_comments(video_id):
